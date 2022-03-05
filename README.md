@@ -1,14 +1,25 @@
-# Autograding Example: Java
-This example project is written in Java, and tested with Gradle/JUnit.
+# 課題 7-3: クラスの作成
 
-### The assignment
-The tests are currently failing because of an output mismatch. Fixing the `System.out.println` in the main method will make the tests green.
+### 課題の説明
+魔法使いを表現するWizardクラスを作成しなさい。
+魔法使いは名前とHPとMPをステータスとして持ち、
+ファイアの魔法（消費MP5）を使うことができるものとする。
+また、実行例のあわせてmainメソッドを書くこと。
+ただし、魔法使いの名前は実行時引数で与えること。
 
-### Setup command
-N/A
+| フィールド名 | 型    | 初期値       |
+|--|----------|--------------|
+| name | String       | なし           | 
+| hp | int       | 100           |  
+| mp | int       | 20           |  
 
-### Run command
-`gradle test`
 
-### Notes
-- The JDK is installed on GitHub Actions machines, so you're also able to directly invoke `javac`, `java`, or any other CLI command included in the JDK. 
+| メソッド名 | 戻り値の型    | 引数リスト        | 処理内容                         |
+|-------|----------|--------------|------------------------------|
+| fire  | なし       | なし           | 魔法を唱えたと表示して、このインスタンスのmpを5減らす | 
+
+
+### 実行例
+```
+魔法使いタロウは魔法を唱えた!
+```
